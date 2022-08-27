@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+
+<title>APNA KIRYANA</title>
+<link rel="stylesheet" type="text/css" href="bb.css" />
+<link rel="stylesheet" type="text/css" href="modal.css" />
+
+
+</head>
+
+<body class="header">
+<div class="logo"> <img src="apna logo.png"  alt="logo"/></div>
+<div class="menu"></div>
+
+  <nav class="navigation">
+  <div class="navList">
+     <a href="about.html" >About us</a>
+     <a href="#"  onclick="document.getElementById('id01').style.display='block'">Sign In</a>
+     <a href="#" onclick="document.getElementById('id02').style.display='block'">Sign Up</a>
+     <a href="feedback.html" >Feedback</a></div>
+     
+     
+
+
+   </nav>
+  <div class="Introduction">
+       <h1>APNA KIRYANA </h1>
+       <h2><em>The<span> Real Smell Of Grocery!!</span></em></h2>
+       <p>Subscribe to Apna Kiryana and get a daily supply of fresh milk,<br /> vegetables, 
+       fruits, and grocery at your doorstep and at your<br /> prescribed time.</p><br /><br />
+       <button class="click" type="submit" onclick="fun()"><a href="product.html">Click Me</a></button>
+	   
+   </div>
+  
+   
+   
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     
+    </div>
+
+
+
+    <div class="container">
+	  <div class="labelModal"><b>Sign In</b></div><br/>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required />
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required />
+        
+      
+	  <button type="submit" style="width:100%"><b>Sign in</b></button>
+      <label>
+        <input type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="clearfix" >
+      
+      <span class="psw"><a href="#"> Forgot password?</a></span><br>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modalSU">
+  
+  <form class="modalSU-content" action="/action_page.php">
+  <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close ModalSU">&times;</span>
+     
+    </div>
+    <div class="container">	
+      <div class="labelModal"><b>Sign Up</b></div><br/>
+      <p><b>Please fill in this form to create an account.</b></p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p><b>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</b></a>.</p>
+	  </div>
+
+      <div class="clearfix">	
+       
+        <button type="submit" class="signupbtn"><b>Sign Up</b></button>
+     
+    </div>
+  </form>
+</div>
+
+
+<script src="bb.js" type="text/javascript"></script>
+
+
+</body>
+</html>

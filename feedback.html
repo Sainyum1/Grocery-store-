@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 
+    <title>FEED BACK FORM</title>
+	<link rel="stylesheet" type="text/css" href="fb.css">
+	<script>
+	 function validateForm() 
+	 {
+         if( document.myForm.fname.value == "" )
+	     {
+            alert( "Please provide your First name!" );
+            document.myForm.fname.focus() ;
+            return false;
+         }
+		 
+		
+         if( document.myForm.lname.value == "" )
+		 {
+            alert( "Please provide your last name!" );
+            document.myForm.lname.focus() ;
+            return false;
+         }
+		 
+		 if( document.myForm.Email.value == "" )
+		 {
+            alert( "Please provide your Email!" );
+            document.myForm.Email.focus() ;
+            return false;
+         }
+		
+		 fun2();
+}
+function fun2()
+{
+alert("THANKS FOR YOUR FEEDBACK!!");
+}
+	
+	</script>
+ </head>
+    <body>
+<div class="header">	
+     <ul>
+        <li><a href="cc.html"><b>HOME</b></a>
+        <ul>
+    </div>			
+<h2>FEED BACK</h2>    
+<div class="container">    
+  <form  name="myForm" action="feedback.html" onsubmit="return validateForm()"  method="post">    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname"><b>First Name</b></label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." >    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname"><b>Last Name</b></label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." >    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email"><b>Mail Id</b></label>    
+        </div>    
+        <div class="col-75">    
+          <input type="Email" id="Email" name="mailid" placeholder="Your mail id.." >    
+        </div>    
+      </div>    
+        <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back"><b>Feed Back</b></label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit"  value="Submit" onsubmit="fun2()">    
+    </div>    
+  </form>    
+</div>    
+    
+</body>    
+</html>
